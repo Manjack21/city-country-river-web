@@ -1,6 +1,15 @@
 {
     "site-title": "Stadt-Land-Fluss",
     "language": "Sprache",
+    "howTo": {
+        "title": "Wie wird gespielt?",
+        "preparationTitle": "Vorbereitung",
+        "preparation": "Zunächst entscheidet Ihr euch wieviele Themen ihr spielen wollt, und würfelt entsprechend viele Themen im Abschnitt \"Thema würfeln\". Jeder spieler schreibt die Themen dann in einer Tabelle auf die ungefähr so aussieht: <table border=\"1\"><tr><th></th><th>Thema 1</th><th>Thema 2</th><th>Thema 3</th><th>...</th></tr><tr><td>Runde 1</td><td></td>            <td></td>            <td></td>            <td></td>        </tr>        <tr>            <td>Runde 2</td>            <td></td>            <td></td>            <td></td>            <td></td>        </tr>        <tr>            <td>...</td>            <td></td>            <td></td>            <td></td>            <td></td>        </tr>       </table>",
+        "playTitle": "Eine Runde spielen",
+        "play": "Ihr würfelt unter \"Buchstabe würfeln\" einen Buchstaben, und startet die Sanduhr. Bis diese abgelaufen ist schreibt nun jeder Spieler zu jedem Thema einen Begriff auf der mit dem gewürfelten Buchstaben beginnt.<p>Nach Ablauf der Zeit werden Punkte verteilt: <br>Kein Wort: 0 Punkte<br>Ein Wort das mehrere Spieler haben: 1 Punkte<br>Ein einzigartiges Wort: 2 Punkte<br>Das einzige Wort der Runde: 4 Punkte</p>",
+        "winTitle": "Sieg",
+        "win": "Nachdem alle Runden gespielt sind (oder Ihr keine Lust mehr habt) werden die Punkte aus allen Runden addiert. Der Spieler mit den meisten Punkten gewinnt."
+    },
     "timer": {
         "title": "Sanduhr",
         "interval": "Zeit pro Runde wählen",

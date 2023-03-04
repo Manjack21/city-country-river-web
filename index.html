@@ -27,17 +27,40 @@
 
     <main class="w3-container w3-center w3-margin-top">
 
+        <!--
+        How to play
+        -->
+        <article class="w3-card w3-round">
+            <header class="w3-panel w3-light-grey" name="sectionHeader">
+                <h3><i18n key="howTo.title">How to play</i18n></h3>
+            </header>
+
+            <div class="w3-container w3-padding w3-center w3-hide">
+                <h4><i18n key="howTo.preparationTitle">Preparation</i18n></h4>
+                <p>
+                    <i18n key="howTo.preparation"></i18n>
+                </p>
+                <h4><i18n key="howTo.playTitle">Play a round</i18n></h4>
+                <p>
+                    <i18n key="howTo.play"></i18n>
+                </p>
+                <h4><i18n key="howTo.winTitle">Play a round</i18n></h4>
+                <p>
+                    <i18n key="howTo.win"></i18n>
+                </p>
+            </div>
+        </article>
+
         
         <!--
         Categories
         -->
         <article class="w3-card w3-round">
-            <header class="w3-panel w3-light-grey">
-                <h3><i18n key="categories.title">Categories</i18n></h3>
+            <header class="w3-panel w3-light-grey" name="sectionHeader">
+                <h3>1. <i18n key="categories.title">Categories</i18n></h3>
             </header>
 
-            <div class="w3-container w3-padding w3-center">
-                
+            <div class="w3-container w3-padding w3-center w3-hide">                
                 <div class="w3-container w3-margin-bottom">
                     <label><i18n key="categories.themelabel">Theme</i18n>: </label>                    
                     <input class="w3-radio" type="radio" value="general" name="theme" checked> <i18n key="categories.general.label">general</i18n>
@@ -62,11 +85,11 @@
         Letter dice
         -->
         <article class="w3-card w3-round">
-            <header class="w3-panel w3-light-grey">
-                <h3><i18n key="letter.title">Random Letter</i18n></h3>
+            <header class="w3-panel w3-light-grey" name="sectionHeader">
+                <h3>2. <i18n key="letter.title">Random Letter</i18n></h3>
             </header>
 
-            <div class="w3-container w3-padding w3-center">                
+            <div class="w3-container w3-padding w3-center w3-hide">                
                 <div>
                     <button class="w3-button w3-blue class w3-round-xlarge" id="letter.start"><i18n key="letter.start">Roll</i18n></button>
                 </div>
@@ -85,10 +108,10 @@
         TIMER
         -->
         <article class="w3-card w3-round">
-            <header class="w3-panel w3-light-grey">
-                <h3><i18n key="timer.title">Timer</i18n></h3>
+            <header class="w3-panel w3-light-grey" name="sectionHeader">
+                <h3>3. <i18n key="timer.title">Timer</i18n></h3>
             </header>
-            <div class="w3-container w3-padding w3-center">
+            <div class="w3-container w3-padding w3-center w3-hide">
                 <label class="w3-label"><i18n key="timer.interval">Select Interval</i18n></label>
                 <br>
                 <div class="w3-bar w3-round-xlarge w3-light-grey">

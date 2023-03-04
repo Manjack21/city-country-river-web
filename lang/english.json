@@ -1,6 +1,15 @@
 {
     "site-title": "City-Country-River",
     "language": "Language",
+    "howTo": {
+        "title": "How to play",
+        "preparationTitle": "Preparation",
+        "preparation": "First you select the number of themes per round. Roll that many themes in \"Themes\". Every player writes down a table that looks something like this: <table border=\"1\"><tr><th></th><th>Theme 1</th><th>Theme 2</th><th>Theme 3</th><th>...</th></tr><tr><td>Round 1</td><td></td>            <td></td>            <td></td>            <td></td>        </tr>        <tr>            <td>Round 2</td>            <td></td>            <td></td>            <td></td>            <td></td>        </tr>        <tr>            <td>...</td>            <td></td>            <td></td>            <td></td>            <td></td>        </tr>       </table>",
+        "playTitle": "Play a round",
+        "play": "You roll a letter under \"Roll a letter\", and start a timer. Every player writes down a word for every theme, until the timer runs out.<p>For each word the following points are granted: <br>No word: 0 points<br>multiple players have the same word: 1 point<br>a unique word: 2 points<br>the only word in this round: 4 points</p>",
+        "winTitle": "Win",
+        "win": "After all rounds are played the points of all rounds will be added. The player with the most points wins."
+    },
     "timer": {
         "title": "Timer",
         "interval": "Time per round",

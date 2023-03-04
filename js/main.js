@@ -33,6 +33,9 @@ window.i18n = new vanilla_i18n (
 );
 window.i18n.run();
 window.addEventListener("load", (ev) => {
+    document.getElementsByName("sectionHeader")
+        .forEach(header => header.addEventListener("click", toggleSection))
+
     document.getElementsByName("timer.button")
         .forEach(btn => btn.addEventListener("click", timerButtonHandler));
     
@@ -50,6 +53,18 @@ window.addEventListener("load", (ev) => {
     app.categoriesAudio = document.getElementById("categories.audio");
     app.categoriesOutput = document.getElementById("categories.output");
 });
+
+
+function toggleSection(event)
+{
+    const header = (event.target.tagName == "I18N" ? event.target.parentElement : event.target).parentElement;
+    
+    const content = header.parentElement.querySelector("div");
+    if(content.classList.contains("w3-hide"))
+        content.classList.remove("w3-hide")
+    else
+        content.classList.add("w3-hide")
+}
 
 // Init end
 //___________________________________________________________________
