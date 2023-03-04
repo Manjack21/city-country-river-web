@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City-Country-River / Stadt-Land-Flu&szlig;</title>
+    
+    <link href="css/w3.css" rel="stylesheet" type="text/css">
+    
+    <script src="js/vanilla-i18n.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    
+    <header class="w3-container w3-blue w3-center w3-padding">
+        <h1><i18n key="site-title">City-Country-River</i18n></h1>
+        <div>
+            <label for="i18n-toggler"><i18n key="language">Language</i18n></label>
+            <select class="w3-select w3-round-xlarge" name="i18n-toggler" id="i18n-toggler">
+                <option value="english">english</option>
+                <option value="deutsch" selected>deutsch</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="w3-container w3-center w3-margin-top">
+        <!--
+        TIMER
+        -->
+        <article class="w3-card w3-round">
+            <header class="w3-panel w3-light-grey">
+                <h3><i18n key="timer.title">Timer</i18n></h3>
+            </header>
+            <div class="w3-container w3-padding w3-center">
+                <label class="w3-label"><i18n key="timer.interval">Select Interval</i18n></label>
+                <br>
+                <div class="w3-bar w3-round-xlarge w3-light-grey">
+                    <button name="timer.button" data-seconds="60" class="w3-button w3-mobile w3-blue w3-bar-item">60 <i18n key="timer.unit">Sek.</i18n></button>
+                    <button name="timer.button" data-seconds="120" class="w3-button w3-mobile w3-bar-item">120 <i18n key="timer.unit">Sek.</i18n></button>
+                    <button name="timer.button" data-seconds="180" class="w3-button w3-mobile w3-bar-item">180 <i18n key="timer.unit">Sek.</i18n></button>
+                </div>
+                <div>
+                    <h1><span id="timer.output">0</span> <i18n key="timer.unit">Sek.</i18n></h1>
+                </div>
+                <div class="w3-container w3-padding">
+                    <button class="w3-button w3-blue class w3-round-xlarge" id="timer.start">Start</button>
+                </div>
+                <audio id="timer.audio" src="bell.mp3"></audio>
+            </div>
+        </article>
+
+        <!--
+        Letter dice
+        -->
+        <article class="w3-card w3-round">
+            <header class="w3-panel w3-light-grey">
+                <h3><i18n key="letter.title">Random Letter</i18n></h3>
+            </header>
+
+            <div class="w3-container w3-padding w3-center">                
+                <div>
+                    <button class="w3-button w3-blue class w3-round-xlarge" id="letter.start">Roll</button>
+                </div>
+
+                <div class="w3-container w3-margin-top w3-center">
+                    <label class="w3-label"><i18n key="letter.label">Your letter</i18n></label>
+                    <br>
+                    <h1 id="letter.output" class="w3-light-grey w3-round-xlarge w3-border w3-padding" style="width:6rem; margin-left: 50%; transform:translateX(-50%);"  >A</h1>
+                </div>
+                <audio id="letter.audio" src="snap.wav"></audio>
+            </div>
+        </article>
+
+        
+        <!--
+        Categories
+        -->
+        <article class="w3-card w3-round">
+            <header class="w3-panel w3-light-grey">
+                <h3><i18n key="categories.title">Categories</i18n></h3>
+            </header>
+
+            <div class="w3-container w3-padding w3-center">                
+                <div>
+                    <button class="w3-button w3-blue class w3-round-xlarge" id="categories.start">Next Category</button>
+                </div>
+
+                <div class="w3-container w3-margin-top w3-center">
+                    <label class="w3-label"><i18n key="categories.label">Your category</i18n></label>
+                    <br>
+                    <h1 id="categories.output" class="w3-light-grey w3-round-xlarge w3-border w3-padding" style="min-width:6rem; margin-left: 50%; transform:translateX(-50%);"  >A</h1>
+                </div>
+                <audio id="categories.audio" src="snap.wav"></audio>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>

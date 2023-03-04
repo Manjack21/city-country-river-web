@@ -1,0 +1,14 @@
+{
+    "site-title": "Stadt-Land-Fluss",
+    "language": "Sprache",
+    "timer": {
+        "title": "Sanduhr",
+        "interval": "Zeit pro Runde wählen",
+        "unit": "Sek."
+    },
+    "letter": {
+        "title": "Buchstabe würfeln",
+        "start": "Und los!",
+        "label": "Euer Buchstabe"
+    }
+}

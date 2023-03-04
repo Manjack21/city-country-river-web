@@ -1,0 +1,9 @@
+{
+    "site-title": "City-Country-River",
+    "language": "Language",
+    "timer": {
+        "title": "Timer",
+        "interval": "Time per round",
+        "unit": "sec."
+    }
+}
