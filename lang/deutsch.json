@@ -10,5 +10,45 @@
         "title": "Buchstabe würfeln",
         "start": "Und los!",
         "label": "Euer Buchstabe"
+    },
+    "categories": {
+        "title": "Thema würfeln",
+        "label": "Euer Thema",
+        "start": "Weiteres Thema",
+        "themelabel": "Themengebiet",
+        "general": {
+            "label": "Allgemeines",
+            "0": "Stadt",
+            "1": "Etwas das man im Kühlschrank hat",
+            "2": "Fluss",
+            "3": "Land",
+            "4": "Tier",
+            "5": "Köperteil",
+            "6": "Essen",
+            "7": "Getränk",
+            "8": "Schaupieler*in",
+            "9": "Sportler*in",
+            "10": "Etwas das riecht",
+            "11": "Pflanze",
+            "12": "Marke",
+            "13": "Liedtitel",
+            "14": "Sänger*in",
+            "15": "Ein Büroartikel",
+            "16": "Darf in keinem Haushalt fehlen",
+            "17": "Ein Teil am Auto",
+            "18": "Wahrzeichen",
+            "19": "Deutscher Nachname",
+            "20": "Filmgenre"
+        },
+        "adult": {
+            "label": "Ab 18",
+            "0": "Etwas das man nur betrunken tut",
+            "1": "Name für einen Pornodarsteller",
+            "2": "Einen Pornotitel",
+            "3": "Rauschmittel",
+            "4": "Die Pflicht-Aufgabe bei \"Wahrheit oder Pflicht\"",
+            "5": "Eine Mordmethode",
+            "6": "Eine Straftat"
+        }
     }
 }

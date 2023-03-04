@@ -5,5 +5,50 @@
         "title": "Timer",
         "interval": "Time per round",
         "unit": "sec."
+    },
+    "letter": {
+        "title": "Roll a letter",
+        "start": "Start",
+        "label": "Your letter"
+    },
+    "categories": {
+        "title": "Themes",
+        "label": "Your theme",
+        "start": "Another theme",
+        "themelabel": "Section",
+        "general": {
+            "label": "General",
+            "0": "City",
+            "1": "Something in the fridge",
+            "2": "River",
+            "3": "Country",
+            "4": "Animal",
+            "5": "Body part",
+            "6": "Food",
+            "7": "Drink",
+            "8": "Actor",
+            "9": "Athlete",
+            "10": "Something that smells",
+            "11": "Plant",
+            "12": "Brand",
+            "13": "Song title",
+            "14": "Singer",
+            "15": "Stationary",
+            "16": "A must-have in the household",
+            "17": "Car part",
+            "18": "Monument",
+            "19": "English last name",
+            "20": "Film genre"
+        },
+        "adult": {
+            "label": "Adult",
+            "0": "Something you do drunk",
+            "1": "Name for a porn actor",
+            "2": "Title for a porn film",
+            "3": "Drug",
+            "4": "The dare task on a game of \"truth or dare\"",
+            "5": "A murder method",
+            "6": "A crime"
+        }
     }
 }

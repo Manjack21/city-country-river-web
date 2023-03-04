@@ -10,7 +10,14 @@ const app= {
     timerInterval: 60,
     timerValue: 0,
     letterAudio: null,
-    letterOutput: null
+    letterOutput: null,
+    categoriesAudio: null,
+    categoriesOutput: null,
+    categoryEntryCounts: {
+        general: 21,
+        adult: 7
+    }
+
 };
 
 const languages = ["deutsch", "english"];
@@ -23,7 +30,7 @@ window.i18n = new vanilla_i18n (
         toggler_id: "i18n-toggler",
         default_language: languages[0],
     }
-    );
+);
 window.i18n.run();
 window.addEventListener("load", (ev) => {
     document.getElementsByName("timer.button")
@@ -37,6 +44,11 @@ window.addEventListener("load", (ev) => {
     document.getElementById("letter.start").addEventListener("click", letterButtonHandler)
     app.letterAudio = document.getElementById("letter.audio");
     app.letterOutput = document.getElementById("letter.output");
+
+    
+    document.getElementById("categories.start").addEventListener("click", categoriesButtonHandler)
+    app.categoriesAudio = document.getElementById("categories.audio");
+    app.categoriesOutput = document.getElementById("categories.output");
 });
 
 // Init end
@@ -46,8 +58,13 @@ window.addEventListener("load", (ev) => {
 
 function categoriesButtonHandler(ev)
 {
-     
-
+    
+    const category = Array.from(document.getElementsByName("theme")).filter(e => e.checked)[0].value;
+    const maxIndex = app.categoryEntryCounts[category];
+    let key = "categories."+category+"."+Math.floor(Math.random() * maxIndex);
+    
+    app.categoriesOutput.attributes["key"].value = key;
+    window.i18n.run();
 }
 
 

@@ -26,6 +26,61 @@
     </header>
 
     <main class="w3-container w3-center w3-margin-top">
+
+        
+        <!--
+        Categories
+        -->
+        <article class="w3-card w3-round">
+            <header class="w3-panel w3-light-grey">
+                <h3><i18n key="categories.title">Categories</i18n></h3>
+            </header>
+
+            <div class="w3-container w3-padding w3-center">
+                
+                <div class="w3-container w3-margin-bottom">
+                    <label><i18n key="categories.themelabel">Theme</i18n>: </label>                    
+                    <input class="w3-radio" type="radio" value="general" name="theme" checked> <i18n key="categories.general.label">general</i18n>
+                    <input class="w3-radio" type="radio" value="adult" name="theme"> <i18n key="categories.adult.label">adult</i18n>
+                </div>
+                <div class="w3-container">
+                    <button class="w3-button w3-blue w3-round-xlarge" id="categories.start"><i18n key="categories.start">Next Category</i18n></button>
+                </div>
+
+                <div class="w3-container w3-margin-top w3-center">
+                    <label class="w3-label"><i18n key="categories.label">Your category</i18n></label>
+                    <br>
+                    <h1 class="w3-light-grey w3-round-xlarge w3-border w3-padding" style="min-width:6rem; margin-left: 50%; transform:translateX(-50%);">
+                        <i18n  id="categories.output" key="">&nbsp;</i18n>
+                    </h1>
+                </div>
+                <audio id="categories.audio" src="snap.wav"></audio>
+            </div>
+        </article>
+
+        <!--
+        Letter dice
+        -->
+        <article class="w3-card w3-round">
+            <header class="w3-panel w3-light-grey">
+                <h3><i18n key="letter.title">Random Letter</i18n></h3>
+            </header>
+
+            <div class="w3-container w3-padding w3-center">                
+                <div>
+                    <button class="w3-button w3-blue class w3-round-xlarge" id="letter.start"><i18n key="letter.start">Roll</i18n></button>
+                </div>
+
+                <div class="w3-container w3-margin-top w3-center">
+                    <label class="w3-label"><i18n key="letter.label">Your letter</i18n></label>
+                    <br>
+                    <h1 id="letter.output" class="w3-light-grey w3-round-xlarge w3-border w3-padding" style="width:6rem; margin-left: 50%; transform:translateX(-50%);"  >A</h1>
+                </div>
+                <audio id="letter.audio" src="snap.wav"></audio>
+            </div>
+        </article>
+
+        
         <!--
         TIMER
         -->
@@ -50,52 +105,7 @@
                 <audio id="timer.audio" src="bell.mp3"></audio>
             </div>
         </article>
-
-        <!--
-        Letter dice
-        -->
-        <article class="w3-card w3-round">
-            <header class="w3-panel w3-light-grey">
-                <h3><i18n key="letter.title">Random Letter</i18n></h3>
-            </header>
-
-            <div class="w3-container w3-padding w3-center">                
-                <div>
-                    <button class="w3-button w3-blue class w3-round-xlarge" id="letter.start">Roll</button>
-                </div>
-
-                <div class="w3-container w3-margin-top w3-center">
-                    <label class="w3-label"><i18n key="letter.label">Your letter</i18n></label>
-                    <br>
-                    <h1 id="letter.output" class="w3-light-grey w3-round-xlarge w3-border w3-padding" style="width:6rem; margin-left: 50%; transform:translateX(-50%);"  >A</h1>
-                </div>
-                <audio id="letter.audio" src="snap.wav"></audio>
-            </div>
-        </article>
-
         
-        <!--
-        Categories
-        -->
-        <article class="w3-card w3-round">
-            <header class="w3-panel w3-light-grey">
-                <h3><i18n key="categories.title">Categories</i18n></h3>
-            </header>
-
-            <div class="w3-container w3-padding w3-center">                
-                <div>
-                    <button class="w3-button w3-blue class w3-round-xlarge" id="categories.start">Next Category</button>
-                </div>
-
-                <div class="w3-container w3-margin-top w3-center">
-                    <label class="w3-label"><i18n key="categories.label">Your category</i18n></label>
-                    <br>
-                    <h1 id="categories.output" class="w3-light-grey w3-round-xlarge w3-border w3-padding" style="min-width:6rem; margin-left: 50%; transform:translateX(-50%);"  >A</h1>
-                </div>
-                <audio id="categories.audio" src="snap.wav"></audio>
-            </div>
-        </article>
     </main>
-
 </body>
 </html>
