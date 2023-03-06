@@ -20,7 +20,7 @@ const app= {
 
 };
 
-const languages = ["deutsch", "english"];
+const languages = ["english", "deutsch"];
 window.i18n = new vanilla_i18n (
     languages,
     opts = {
@@ -137,27 +137,50 @@ function timerButtonHandler(ev)
     clickedButton.classList.add("w3-blue")
 }
 
-function timerStartHandler()
+function timerStartHandler(ev)
 {
+    const clickedButton = (ev.target.tagName == "I18N" ? ev.target.parentElement : ev.target);
+    const i18n = clickedButton.querySelector("i18n");
+
+    // on every click, the current timer will be cleared
+    // on stop and on start (to start another timer)
     if(app.timer != null)
         window.clearInterval(app.timer);
-    
-    app.timerValue = app.timerInterval + 1;
-    app.timer = window.setInterval(
-        (ev) => {
-            app.timerValue--;
-            app.timerOutput.innerText = app.timerValue;
 
-            if(app.timerValue == 0)
-            {
-                app.timerAudio.play();
-                window.clearInterval(app.timer);
-                app.timer = null;
-            }
-        }, 
-        1000
-    );
+    if(clickedButton.dataset.action == "stop")
+    {
+        clickedButton.dataset.action = "start";
+        i18n.attributes["key"].value = "timer.start";
+        app.timerOutput.innerText = 0
+    }
+    else
+    {   
+        clickedButton.dataset.action = "stop";
+        i18n.attributes["key"].value = "timer.stop";
+        console.log(i18n, i18n.attributes["key"]);
+
+        app.timerValue = app.timerInterval;
+        app.timerOutput.innerText = app.timerInterval;
+
+        app.timer = window.setInterval(
+            (ev) => {
+                app.timerValue--;
+                app.timerOutput.innerText = app.timerValue;
+
+                if(app.timerValue == 0)
+                {
+                    app.timerAudio.play();
+                    window.clearInterval(app.timer);
+                    app.timer = null;
+                }
+            }, 
+            1000
+        );
+    }
+
+    window.i18n.run();
 }
+
 
 // Timer end
 //___________________________________________________________________

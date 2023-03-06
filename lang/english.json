@@ -13,7 +13,9 @@
     "timer": {
         "title": "Timer",
         "interval": "Time per round",
-        "unit": "sec."
+        "unit": "sec.",
+        "start": "Start",
+        "stop": "Stop"
     },
     "letter": {
         "title": "Roll a letter",

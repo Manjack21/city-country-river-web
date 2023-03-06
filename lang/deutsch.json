@@ -13,7 +13,9 @@
     "timer": {
         "title": "Sanduhr",
         "interval": "Zeit pro Runde wählen",
-        "unit": "Sek."
+        "unit": "Sek.",
+        "start": "Start",
+        "stop": "Stop"
     },
     "letter": {
         "title": "Buchstabe würfeln",
