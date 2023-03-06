@@ -7,4 +7,4 @@ The functionality includes
 * a random topics generator
 * in multiple languages
 
-To play the game, gather a few friends and visit [https://city-coutry-river.manjacknet.de](https://city-coutry-river.manjacknet.de "Demo site for this app")
+To play the game, gather a few friends and visit [https://city-country-river.manjacknet.de](https://city-country-river.manjacknet.de "Demo site for this app")
