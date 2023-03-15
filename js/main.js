@@ -140,25 +140,14 @@ function timerButtonHandler(ev)
 function timerStartHandler(ev)
 {
     const clickedButton = (ev.target.tagName == "I18N" ? ev.target.parentElement : ev.target);
-    const i18n = clickedButton.querySelector("i18n");
-
+    
     // on every click, the current timer will be cleared
     // on stop and on start (to start another timer)
     if(app.timer != null)
         window.clearInterval(app.timer);
 
-    if(clickedButton.dataset.action == "stop")
+    if(clickedButton.dataset.action == "start")
     {
-        clickedButton.dataset.action = "start";
-        i18n.attributes["key"].value = "timer.start";
-        app.timerOutput.innerText = 0
-    }
-    else
-    {   
-        clickedButton.dataset.action = "stop";
-        i18n.attributes["key"].value = "timer.stop";
-        console.log(i18n, i18n.attributes["key"]);
-
         app.timerValue = app.timerInterval;
         app.timerOutput.innerText = app.timerInterval;
 
@@ -172,15 +161,35 @@ function timerStartHandler(ev)
                     app.timerAudio.play();
                     window.clearInterval(app.timer);
                     app.timer = null;
+                    toggleStartButton(clickedButton);
                 }
             }, 
             1000
         );
     }
 
-    window.i18n.run();
+    toggleStartButton(clickedButton);
 }
 
+function toggleStartButton(button)
+{
+    const i18n = button.querySelector("i18n");
+
+    if(button.dataset.action == "stop")
+    {
+        button.dataset.action = "start";
+        i18n.attributes["key"].value = "timer.start";
+        app.timerOutput.innerText = 0
+    }
+    else
+    {
+        button.dataset.action = "stop";
+        i18n.attributes["key"].value = "timer.stop";
+        console.log(i18n, i18n.attributes["key"]);
+    }
+    
+    window.i18n.run();
+}
 
 // Timer end
 //___________________________________________________________________
