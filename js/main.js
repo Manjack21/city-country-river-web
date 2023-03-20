@@ -158,9 +158,6 @@ function timerStartHandler(ev)
 
                 if(app.timerValue == 0)
                 {
-                    app.timerAudio.play();
-                    window.clearInterval(app.timer);
-                    app.timer = null;
                     toggleStartButton(clickedButton);
                 }
             }, 
@@ -179,13 +176,15 @@ function toggleStartButton(button)
     {
         button.dataset.action = "start";
         i18n.attributes["key"].value = "timer.start";
-        app.timerOutput.innerText = 0
+        app.timerOutput.innerText = 0;
+        app.timerAudio.play();
+        window.clearInterval(app.timer);
+        app.timer = null;
     }
     else
     {
         button.dataset.action = "stop";
         i18n.attributes["key"].value = "timer.stop";
-        console.log(i18n, i18n.attributes["key"]);
     }
     
     window.i18n.run();
