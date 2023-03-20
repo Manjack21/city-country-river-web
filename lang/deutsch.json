@@ -49,7 +49,11 @@
             "17": "Ein Teil am Auto",
             "18": "Wahrzeichen",
             "19": "Deutscher Nachname",
-            "20": "Filmgenre"
+            "20": "Filmgenre",
+            "21": "Letzte Worte",
+            "22": "Seltsame Zutaten",
+            "23": "Ein richtig schlechter Werbetext",
+            "24": "Musiktitel"
         },
         "adult": {
             "label": "Ab 18",
@@ -59,7 +63,9 @@
             "3": "Rauschmittel",
             "4": "Die Pflicht-Aufgabe bei \"Wahrheit oder Pflicht\"",
             "5": "Eine Mordmethode",
-            "6": "Eine Straftat"
+            "6": "Eine Straftat",
+            "7": "Der Grund warum du die Tür nackt öffnest",
+            "8": "Das willst du nicht von deinem Arzt hören"
         }
     }
 }

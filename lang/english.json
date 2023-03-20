@@ -49,7 +49,11 @@
             "17": "Car part",
             "18": "Monument",
             "19": "English last name",
-            "20": "Film genre"
+            "20": "Film genre",
+            "21": "Last words",
+            "22": "Strange ingredients",
+            "23": "A really bad advertisement claim",
+            "24": "Song title"
         },
         "adult": {
             "label": "Adult",
@@ -59,7 +63,9 @@
             "3": "Drug",
             "4": "The dare task on a game of \"truth or dare\"",
             "5": "A murder method",
-            "6": "A crime"
+            "6": "A crime",
+            "7": "The reason why you open the door naked",
+            "8": "What you don't want to hear from your doctor"
         }
     }
 }

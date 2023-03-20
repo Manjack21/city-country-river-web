@@ -14,8 +14,8 @@ const app= {
     categoriesAudio: null,
     categoriesOutput: null,
     categoryEntryCounts: {
-        general: 21,
-        adult: 7
+        general: 25,
+        adult: 9
     }
 
 };
